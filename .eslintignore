@@ -1,0 +1,5 @@
+# other artefacts
+.output
+node_modules
+dist
+public

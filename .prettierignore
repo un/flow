@@ -1,0 +1,10 @@
+node_modules
+.turbo
+.pnpm-store
+package-lock.json
+pnpm-lock.yaml
+.next
+packages/database/migrations
+
+routeTree.gen.ts
+.drizzle/

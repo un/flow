@@ -1,0 +1,49 @@
+{
+  "name": "@un/flow",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "a random streaming service",
+  "scripts": {
+    "format": "prettier . --write",
+    "check:format": "prettier . --check",
+    "check:types": "dotenv -e .env -- turbo run check --cache-dir=.turbo --env-mode=loose",
+    "check:lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore",
+    "check": "pnpm check:lint && pnpm check:types",
+    "fix": "eslint --fix . --ext .ts,.tsx --ignore-path .gitignore",
+    "start:all": "dotenv -e .env -- turbo run start --env-mode=loose",
+    "build:all": "dotenv -e .env -- turbo run build --cache-dir=.turbo --env-mode=loose",
+    "build": "pnpm run -r build",
+    "start": "pnpm run -r start",
+    "clean": "find . -name node_modules -o -name .next -o -name .output -o -name .turbo -o -name dist -type d -prune | xargs rm -rf",
+    "dev": "dotenv -e .env -- turbo run dev --env-mode=loose",
+    "docker:up": "docker compose --project-directory packages/local-docker up",
+    "docker:down": "docker compose --project-directory packages/local-docker down",
+    "docker:clean": "docker compose --project-directory packages/local-docker down -v",
+    "db:push": "dotenv -e .env -- pnpm --dir packages/database db:push",
+    "db:studio": "dotenv -e .env -- turbo run db:studio --env-mode=loose",
+    "db:generate": "dotenv -e .env -- turbo run db:generate --env-mode=loose",
+    "db:migrate": "dotenv -e .env -- turbo run db:migrate --env-mode=loose",
+    "db:up": "dotenv -e .env -- turbo run db:up --env-mode=loose",
+    "db:check": "dotenv -e .env -- turbo run db:generate --env-mode=loose",
+    "db:drop": "dotenv -e .env -- turbo run db:drop --env-mode=loose"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "dotenv-cli": "^8.0.0",
+    "eslint": "^9.17.0",
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-sort-imports": "^1.8.6",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tsx": "^4.18.0",
+    "turbo": "^2.3.3",
+    "typescript": "5.7.2",
+    "@u22n/tsconfig": "^0.0.2"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
+  },
+  "packageManager": "pnpm@8.15.6"
+}
