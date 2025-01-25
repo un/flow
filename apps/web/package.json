@@ -13,15 +13,21 @@
     "@flow/database": "workspace:*",
     "@flow/utils": "workspace:*",
     "@radix-ui/react-slot": "^1.1.1",
+    "@react-email/components": "0.0.32",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.474.0",
     "next": "15.1.6",
+    "next-safe-action": "^7.10.2",
     "next-themes": "^0.4.4",
+    "nuqs": "^2.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -31,6 +37,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "postcss": "^8",
+    "react-email": "3.0.6",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

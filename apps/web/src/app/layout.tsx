@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@/components/theme-provider';
+import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import { Geist, Geist_Mono } from 'next/font/google';
 import type { Metadata } from 'next';
 import './globals.css';
@@ -32,7 +33,7 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange>
-          {children}
+          <NuqsAdapter>{children}</NuqsAdapter>
         </ThemeProvider>
       </body>
     </html>
