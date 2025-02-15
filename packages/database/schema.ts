@@ -12,7 +12,7 @@ import {
   typeIdGenerator
 } from '@flow/utils/typeid';
 import type { IdTypePrefixNames, TypeId } from '@flow/utils/typeid';
-import { UserRoles } from '@flow/auth';
+import { UserRoles } from '@flow/utils/types';
 
 const typeId = <const T extends IdTypePrefixNames>(
   prefix: T,

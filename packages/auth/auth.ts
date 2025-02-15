@@ -5,8 +5,8 @@ import { createAuthClient } from 'better-auth/react';
 import { betterAuth } from 'better-auth';
 
 import { passkey } from 'better-auth/plugins/passkey';
+import { UserRoles } from '@flow/utils/types';
 import { db } from '@flow/database';
-import { UserRoles } from './types';
 
 export const auth = betterAuth({
   baseURL: process.env.WEB_BASE_URL,

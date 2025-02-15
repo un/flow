@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@flow/database": "workspace:*",
-    "better-auth": "^1.1.7",
+    "@flow/utils": "workspace:*",
+    "better-auth": "^1.1.18",
     "dotenv": "^16.4.7"
   },
   "devDependencies": {
