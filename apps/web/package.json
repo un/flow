@@ -21,6 +21,7 @@
     "next-safe-action": "^7.10.3",
     "next-themes": "^0.4.4",
     "nuqs": "^2.3.2",
+    "radi-color-css": "^1.0.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",

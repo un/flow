@@ -86,6 +86,9 @@ importers:
       nuqs:
         specifier: ^2.3.2
         version: 2.3.2(next@15.1.7(@babel/core@7.24.5)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
+      radi-color-css:
+        specifier: ^1.0.5
+        version: 1.0.5
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -3140,6 +3143,9 @@ packages:
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
+
+  radi-color-css@1.0.5:
+    resolution: {integrity: sha512-FrOa3U483ChD+6x8B10jomFeIlSffHr0usgZsuAhsPRucUCa6jEAENPiNtQo/c1b66QUY4x5K1PlKzenbU1zMw==}
 
   react-dom@19.0.0:
     resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
@@ -6405,6 +6411,8 @@ snapshots:
   pvutils@1.1.3: {}
 
   queue-microtask@1.2.3: {}
+
+  radi-color-css@1.0.5: {}
 
   react-dom@19.0.0(react@19.0.0):
     dependencies:
